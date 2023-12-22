@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Jiu Jitsu</title>
+
+        <style>
+        /* used chat gpt to try to add a right border to the table, didn't work, but a different solution did */
+            .table-bordered-col th,
+            .table-bordered-col td {
+              border-left: 1px solid black 
+            }
+        
+            .table-bordered-col th:first-child,
+            .table-bordered-col td:first-child {
+              border-left: none;
+            }
+          </style>
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+    
+        <div class="container m-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="academylogo.png" alt="The Academy logo">
+                </a>
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="jiujitsu.html"><h3>Jiu Jitsu</h3></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="muaythai.html"><h3>Muay Thai</h3></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container m-0">
+            <h1>Jiu Jitsu is a grappling-based martial art</h1>
+        </div>
+<!--used md-4 to make each picture take up 1/3 the page, they collapse if you shrink the page-->
+        <div class="container m-0">
+            <div class="row">
+                <div class="col md-4">
+                    <img src="bjj picture 1.png">
+            </div>
+
+                <div class="col md-4">
+                    <img src="bjj picture 2.png">
+                </div>
+
+                <div class="col md-4">
+                    <img src="bjj picture 3.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="container m-0">
+            <table class="table table-borderless">
+                <tr>
+                    <!--used "custom-border-end" to put a line in between days of the week-->
+                    <th class="custom-border-end">Monday</th>
+                    <th class="custom-border-end">Tuesday</th>
+                    <th class="custom-border-end">Wednesday</th>
+                    <th class="custom-border-end">Thursday</th>
+                    <th class="custom-border-end">Friday</th>
+                    <th class="custom-border-end">Saturday</th>
+                </tr>
+                <tr>
+                    <td class="custom-border-end">6:45am No Gi</td>
+                    <td class="custom-border-end">6:45am Gi</td>
+                    <td class="custom-border-end">6:45am Gi</td>
+                    <td class="custom-border-end">6:45am No Gi Open Roll</td>
+                    <td class="custom-border-end">11am Open Roll, Gi or No Gi Optional</td>
+                    <td class="custom-border-end">6:45am No Gi</td>
+                </tr>
+                <tr>
+                    <td class="custom-border-end">6pm Gi</td>
+                    <td class="custom-border-end">3pm No Gi Open Roll</td>
+                    <td class="custom-border-end">6pm Gi</td>
+                    <td class="custom-border-end">3pm No Gi Open Roll</td>
+                    <td class="custom-border-end">6pm No Gi Open Roll</td>
+                    <td class="custom-border-end"></td>
+                </tr>
+                <tr>
+                    <td class="custom-border-end">7pm No Gi</td>
+                    <td class="custom-border-end">6pm Gi</td>
+                    <td class="custom-border-end">7pm No Gi</td>
+                    <td class="custom-border-end">6pm Gi</td>
+                    <td class="custom-border-end"></td>
+                    <td class="custom-border-end"></td>
+                </tr>
+                <tr>
+                    <td class="custom-border-end"></td>
+                    <td class="custom-border-end">7pm No Gi</td>
+                    <td class="custom-border-end"></td>
+                    <td class="custom-border-end">7pm No Gi</td>
+                    <td class="custom-border-end"></td>
+                    <td class="custom-border-end"></td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="container m-0">
+            <form>
+                <h2>Do you prefer takedowns, or pulling guard?</h2>
+
+            <!--div class form check to start a form, type=radio for radio buttons-->
+            <!--wasn't exactly certain how to indent the elements, hope I got it right-->
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        I prefer takedowns
+                        </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        I prefer pulling guard
+                        </label>
+                </div>
+          
+                <button class="btn button-size mt-1 btn-dark form-control" type="submit">
+                Submit
+                </button>
+            </form>
+        </div>
+
+</body>
+</html>

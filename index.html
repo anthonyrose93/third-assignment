@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Academy Eden Prairie</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> <!--Reference to the bootstrap file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!--For some reason, there is a thin left border on my brand logo image-->
+<!--Also the brand logo was moved to the right in a weird way, but adding 'm-0' to <div class="container"> seemed to fix it-->
+<div class="container m-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--Inside my nav bar, we haved our brand logo which is anchor -->
+        <a class="navbar-brand" href="#">
+            <img src="academylogo.png" alt="The Academy logo">
+        </a>
+
+    <!--There's a lot of classes going on with this button, I'm none the wiser to most of them, but I copy-pasted from chat GPT-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <!--The list items are my Jiu Jitsu & Muay Thai pages, linked via anchor & href-->
+    <!--I'm still not certain what 'collapse' means-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="jiujitsu.html"><h3>Jiu Jitsu</h3></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="muaythai.html"><h3>Muay Thai</h3></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--Added 'm-0' to every <class="container"> just for the sake of uniformity, don't know if it did anything-->
+    <div class="container m-0">
+        <h1>The Academy Eden Prairie</h1>
+    </div>
+
+    <div class="container m-0">
+        <main>
+            <h2>We teach grappling & striking, using the ecological approach</h2>
+         </main>
+</div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js> </script>
+</body>
+</html>
